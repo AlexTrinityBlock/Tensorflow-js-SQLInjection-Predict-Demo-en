@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tensorflow.js SQL injection string detection</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar  navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand">Tensorflow.js SQL injection string detection</div>
+            <div class="navbar-brand" style="font-size:10px">Author@2022 &nbsp;Wei Chun Hsiao</div>
+        </div>
+    </nav>
+    <!-- 導覽列/ -->
+
+    <!-- 輸入與預測 -->
+    <div class="container text-center">
+        <br><br>
+        <h1>SQL injection string detection</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                <h3>SQL injection string possibility</h3>
+                <p id="resultElement"></p>
+                <canvas id="evalueChart"></canvas>
+            </div>
+            <div class="col-md-9">
+                <div class="form-group">
+                    <br><br>
+                    <label for="textarea1">
+                        <h3>Input string for detection </h3>
+                    </label>
+                    <textarea class="form-control" id="textarea1" rows="3"  maxlength="1000"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 輸入與預測/ -->
+
+</body>
+<script></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/chart.js"></script>
+<script src="./js/tf.min.js"></script>
+<script src="./js/script.js"></script>
+
+</html>
